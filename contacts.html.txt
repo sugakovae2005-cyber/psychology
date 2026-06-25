@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; background: #f4f4f4; }
+        header { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 2rem 0; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        nav { background: #fff; padding: 1rem 0; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        nav ul { list-style: none; display: flex; justify-content: center; gap: 2rem; }
+        nav a { text-decoration: none; color: #667eea; font-weight: 600; padding: 0.5rem 1rem; border-radius: 5px; transition: all 0.3s; }
+        nav a:hover { background: #667eea; color: white; }
+        main { padding: 3rem 0; }
+        .contacts-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; margin-top: 2rem; }
+        .contact-info { background: white; padding: 2rem; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
+        .contact-info h2 { color: #667eea; margin-bottom: 1.5rem; }
+        .contact-item { margin-bottom: 1.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid #eee; }
+        .contact-item:last-child { border-bottom: none; }
+        .contact-item h3 { color: #764ba2; margin-bottom: 0.5rem; font-size: 1.2rem; }
+        .map-container { background: white; padding: 2rem; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
+        .map-container h2 { color: #667eea; margin-bottom: 1rem; }
+        .map-placeholder { 
+            width: 100%; 
+            height: 400px; 
+            background: #e0e0e0; 
+            border-radius: 10px; 
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            flex-direction: column;
+            margin-top: 1rem;
+        }
+        iframe { width: 100%; height: 400px; border: none; border-radius: 10px; }
+        .directions { margin-top: 2rem; padding: 1.5rem; background: #f9f9f9; border-radius: 10px; }
+        .directions h3 { color: #764ba2; margin-bottom: 1rem; }
+        .directions ol { margin-left: 1.5rem; }
+        .directions li { margin-bottom: 0.5rem; }
+        footer { background: #2c3e50; color: white; padding: 2rem 0; text-align: center; margin-top: 3rem; }
+        @media (max-width: 768px) { .contacts-grid { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+    <header><div class="container"><h1>📍 Контакты</h1></div></header>
+    <nav><div class="container"><ul>
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="specialist1.html">Анна Петрова</a></li>
+        <li><a href="specialist2.html">Михаил Соколов</a></li>
+        <li><a href="specialist3.html">Елена Васильева</a></li>
+        <li><a href="statistics.html">Статистика</a></li>
+        <li><a href="contacts.html">Контакты</a></li>
+    </ul></div></nav>
+    <main>
+        <div class="container">
+            <div class="contacts-grid">
+                <div class="contact-info">
+                    <h2>Контактная информация</h2>
+                    
+                    <div class="contact-item">
+                        <h3>📞 Телефоны</h3>
+                        <p><strong>+7 (495) 123-45-67</strong> (основной)<br>
+                        <strong>+7 (916) 765-43-21</strong> (мобильный)</p>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <h3>📧 Email</h3>
+                        <p>info@harmony-psych.ru<br>
+                        zapis@harmony-psych.ru (запись на прием)</p>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <h3>🕐 Режим работы</h3>
+                        <p><strong>Понедельник - Пятница:</strong> 9:00 - 21:00<br>
+                        <strong>Суббота:</strong> 10:00 - 18:00<br>
+                        <strong>Воскресенье:</strong> выходной</p>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <h3>📬 Адрес</h3>
+                        <p>г. Москва, ул. Психологическая, д. 15, офис 302<br>
+                        (м. Тверская, м. Пушкинская)</p>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <h3>💬 Мессенджеры</h3>
+                        <p>WhatsApp: +7 (916) 765-43-21<br>
+                        Telegram: @harmony_psych</p>
+                    </div>
+                </div>
+                
+                <div class="map-container">
+                    <h2>Как до нас добраться</h2>
+                    <!-- Вставьте сюда реальную карту Яндекс или Google -->
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2245.5!2d37.6173!3d55.7558!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTXCsDQ1JzIwLjkiTiAzN8KwMzcnMDIuMyJF!5e0!3m2!1sru!2sru!4v1234567890"
+                        allowfullscreen="" 
+                        loading="lazy">
+                    </iframe>
+                    
+                    <div class="directions">
+                        <h3>От метро Тверская/Пушкинская:</h3>
+                        <ol>
+                            <li>Выход к театру им. Пушкина</li>
+                            <li>Идите по Тверской улице 5 минут</li>
+                            <li>Поверните направо на ул. Психологическую</li>
+                            <li>Дом 15 - серое 5-этажное здание</li>
+                            <li>Подъезд 2, офис 302 (3 этаж)</li>
+                        </ol>
+                        <p style="margin-top: 1rem;"><strong>🚗 На машине:</strong> Есть парковка во дворе</p>
+                        <p><strong>🚌 На автобусе:</strong> Остановка "Психологическая ул." (маршруты 15, 23, 45)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer><div class="container">
+        <p>📞 +7 (495) 123-45-67 | 📧 info@harmony-psych.ru</p>
+        <p style="margin-top: 1rem;">© 2024 Психологический центр «Гармония»</p>
+    </div></footer>
+</body>
+</html>
