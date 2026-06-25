@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Гармония - Психологический центр</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f4f4f4;
+        }
+        
+        /* Шапка */
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 2rem 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .header-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        
+        .logo {
+            width: 80px;
+            height: 80px;
+            background: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            color: #667eea;
+            margin-right: 2rem;
+        }
+        
+        .site-info h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .annotation {
+            font-size: 1.1rem;
+            opacity: 0.95;
+            max-width: 600px;
+        }
+        
+        /* Навигация */
+        nav {
+            background: #fff;
+            padding: 1rem 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 2rem;
+        }
+        
+        nav a {
+            text-decoration: none;
+            color: #667eea;
+            font-weight: 600;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            transition: all 0.3s;
+        }
+        
+        nav a:hover {
+            background: #667eea;
+            color: white;
+        }
+        
+        /* Основной контент */
+        main {
+            padding: 3rem 0;
+            min-height: 60vh;
+        }
+        
+        .welcome {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        
+        .welcome h2 {
+            color: #667eea;
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+        
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .service-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .service-card h3 {
+            color: #764ba2;
+            margin-bottom: 1rem;
+        }
+        
+        /* Подвал */
+        footer {
+            background: #2c3e50;
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+        }
+        
+        .footer-content {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 2rem;
+            margin-bottom: 1rem;
+        }
+        
+        .footer-section h3 {
+            margin-bottom: 0.5rem;
+            color: #667eea;
+        }
+        
+        footer a {
+            color: #667eea;
+            text-decoration: none;
+        }
+        
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">🧠</div>
+                <div class="site-info">
+                    <h1>Психологический центр «Гармония»</h1>
+                    <p class="annotation">
+                        Профессиональная психологическая помощь: индивидуальное консультирование, 
+                        семейная терапия, детская психология, когнитивно-поведенческая терапия, 
+                        помощь при тревоге и депрессии
+                    </p>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="specialist1.html">Анна Петрова</a></li>
+                <li><a href="specialist2.html">Михаил Соколов</a></li>
+                <li><a href="specialist3.html">Елена Васильева</a></li>
+                <li><a href="statistics.html">Статистика</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <main>
+        <div class="container">
+            <section class="welcome">
+                <h2>Добро пожаловать в наш центр!</h2>
+                <p>Мы помогаем людям обрести гармонию и решить психологические проблемы с 2015 года</p>
+            </section>
+            
+            <section>
+                <h2 style="text-align: center; color: #667eea; margin-bottom: 1rem;">Наши специалисты</h2>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <h3>👩‍️ Анна Петрова</h3>
+                        <p>Клинический психолог, специалист по тревожным расстройствам</p>
+                        <a href="specialist1.html" style="color: #667eea; display: inline-block; margin-top: 1rem;">Подробнее →</a>
+                    </div>
+                    <div class="service-card">
+                        <h3>👨‍⚕️ Михаил Соколов</h3>
+                        <p>Семейный психотерапевт, эксперт по отношениям</p>
+                        <a href="specialist2.html" style="color: #667eea; display: inline-block; margin-top: 1rem;">Подробнее →</a>
+                    </div>
+                    <div class="service-card">
+                        <h3>👩‍️ Елена Васильева</h3>
+                        <p>Детский психолог, специалист по работе с подростками</p>
+                        <a href="specialist3.html" style="color: #667eea; display: inline-block; margin-top: 1rem;">Подробнее →</a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>📞 Телефон</h3>
+                    <p>+7 (495) 123-45-67</p>
+                </div>
+                <div class="footer-section">
+                    <h3>📧 Email</h3>
+                    <p>info@harmony-psych.ru</p>
+                </div>
+                <div class="footer-section">
+                    <h3>🕐 Режим работы</h3>
+                    <p>Пн-Пт: 9:00 - 21:00</p>
+                    <p>Сб: 10:00 - 18:00</p>
+                </div>
+            </div>
+            <p style="margin-top: 1rem;">
+                <a href="contacts.html">Подробная контактная информация и схема проезда →</a>
+            </p>
+            <p style="margin-top: 2rem; opacity: 0.8;">© 2024 Психологический центр «Гармония»</p>
+        </div>
+    </footer>
+</body>
+</html>

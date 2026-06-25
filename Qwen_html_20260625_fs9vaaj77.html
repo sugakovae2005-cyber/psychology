@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Михаил Соколов - Семейный психотерапевт</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; background: #f4f4f4; }
+        header { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 2rem 0; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        nav { background: #fff; padding: 1rem 0; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        nav ul { list-style: none; display: flex; justify-content: center; gap: 2rem; }
+        nav a { text-decoration: none; color: #667eea; font-weight: 600; padding: 0.5rem 1rem; border-radius: 5px; transition: all 0.3s; }
+        nav a:hover { background: #667eea; color: white; }
+        main { padding: 3rem 0; }
+        .specialist-profile { display: grid; grid-template-columns: 1fr 2fr; gap: 3rem; background: white; padding: 3rem; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
+        .photo-placeholder { width: 100%; height: 400px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 10px; display: flex; align-items: center; justify-content: center; color: white; font-size: 6rem; }
+        .specialist-info h1 { color: #667eea; margin-bottom: 1rem; }
+        .specialist-info h2 { color: #764ba2; margin: 1.5rem 0 0.5rem; }
+        .specialist-info p { margin-bottom: 1rem; }
+        .chart-container { margin-top: 3rem; background: white; padding: 2rem; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
+        .histogram { display: flex; align-items: flex-end; justify-content: space-around; height: 300px; margin-top: 2rem; padding: 1rem; background: #f9f9f9; border-radius: 5px; }
+        .bar { width: 60px; background: linear-gradient(to top, #667eea, #764ba2); border-radius: 5px 5px 0 0; display: flex; flex-direction: column; align-items: center; justify-content: flex-end; padding-bottom: 10px; color: white; font-weight: bold; }
+        .chart-labels { display: flex; justify-content: space-around; margin-top: 0.5rem; padding: 0 20px; }
+        .chart-labels div { width: 60px; text-align: center; font-size: 0.9rem; }
+        footer { background: #2c3e50; color: white; padding: 2rem 0; text-align: center; margin-top: 3rem; }
+        @media (max-width: 768px) { .specialist-profile { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+    <header><div class="container"><h1>🧠 Психологический центр «Гармония»</h1></div></header>
+    <nav><div class="container"><ul>
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="specialist1.html">Анна Петрова</a></li>
+        <li><a href="specialist2.html">Михаил Соколов</a></li>
+        <li><a href="specialist3.html">Елена Васильева</a></li>
+        <li><a href="statistics.html">Статистика</a></li>
+        <li><a href="contacts.html">Контакты</a></li>
+    </ul></div></nav>
+    <main>
+        <div class="container">
+            <div class="specialist-profile">
+                <div class="photo-placeholder">👨‍️</div>
+                <div class="specialist-info">
+                    <h1>Михаил Александрович Соколов</h1>
+                    <h2>Специализация</h2>
+                    <p><strong>Семейный психотерапевт, системный терапевт</strong></p>
+                    <ul style="margin-left: 2rem; margin-bottom: 1rem;">
+                        <li>Семейные конфликты и кризисы</li>
+                        <li>Проблемы в супружеских отношениях</li>
+                        <li>Развод и постразводная адаптация</li>
+                        <li>Родительско-детские отношения</li>
+                        <li>Подготовка к браку</li>
+                    </ul>
+                    <h2>Образование</h2>
+                    <p>• СПбГУ, факультет психологии (2008)<br>
+                    • Московский институт системной семейной терапии (2012)<br>
+                    • Сертифицированный гештальт-терапевт</p>
+                    <h2>Опыт работы</h2>
+                    <p>14 лет практики. Провел более 3000 семейных консультаций. 
+                    Работаю с парами и целыми семьями.</p>
+                </div>
+            </div>
+            <div class="chart-container">
+                <h2 style="color: #667eea; text-align: center;">Динамика успешных случаев (2020-2024)</h2>
+                <div class="histogram">
+                    <div class="bar" style="height: 100px;">38<span>2020</span></div>
+                    <div class="bar" style="height: 140px;">52<span>2021</span></div>
+                    <div class="bar" style="height: 190px;">71<span>2022</span></div>
+                    <div class="bar" style="height: 230px;">88<span>2023</span></div>
+                    <div class="bar" style="height: 260px;">102<span>2024</span></div>
+                </div>
+                <div class="chart-labels"><div>2020</div><div>2021</div><div>2022</div><div>2023</div><div>2024</div></div>
+            </div>
+        </div>
+    </main>
+    <footer><div class="container">
+        <p>📞 +7 (495) 123-45-67 | 📧 info@harmony-psych.ru</p>
+        <p style="margin-top: 1rem;"><a href="contacts.html" style="color: #667eea;">Контакты и схема проезда</a></p>
+    </div></footer>
+</body>
+</html>
